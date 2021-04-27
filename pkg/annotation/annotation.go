@@ -39,7 +39,7 @@ const (
 // IsInHaMode check whether in ha mode
 func IsInHaMode(ann map[string]string) bool {
 	if ann != nil {
-		val, ok := ann[AnnHaModeKey]
+		val, ok := 			ann[AnnHaModeKey]
 		if ok && val == AnnHaModeVal {
 			return true
 		}
