@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '* * * * *'
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   docker:
     name: Build docker image
