@@ -26,7 +26,7 @@ jobs:
 
       - name: Test
         run: |
-          export GOPATH=${{ github.workspace }}/go
+          export GOPATH=${GITHUB_WORKSPACE}/go
           export PATH=$PATH:$GOPATH/bin
           make test
         working-directory: ${{ github.workspace }}/go/src/github.com/${{ github.repository }}
